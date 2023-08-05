@@ -1,3 +1,6 @@
 [submodule "utilsWorkflows"]
 	path = utilsWorkflows
 	url = git@github.com:FAMAF-resources/utilsWorkflows.git
+[submodule ".github/workflow"]
+	path = .github/workflow
+	url = git@github.com:FAMAF-resources/parentRepository.git
