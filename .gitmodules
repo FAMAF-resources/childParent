@@ -1,0 +1,3 @@
+[submodule "utilsWorkflows"]
+	path = utilsWorkflows
+	url = git@github.com:FAMAF-resources/utilsWorkflows.git
