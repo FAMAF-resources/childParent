@@ -34,12 +34,13 @@ jobs:
         id: status
         run: |
           echo $(git status -s)
-          if [[ $(git status --porcelain) ]]; then
+          if [[ $(git status -s) ]]; then
             export SHOULD_COMMIT=true
           else
             export SHOULD_COMMIT=false
           fi
           echo "SHOULD_COMMIT=$SHOULD_COMMIT" >> $GITHUB_ENV
+          echo "SHOULD_COMMIT=$SHOULD_COMMIT"
 
       - name: Config git
         if: ${{ env.SHOULD_COMMIT == 'true' }}
